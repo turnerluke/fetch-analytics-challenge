@@ -1,0 +1,7 @@
+fetch_dbt:
+  outputs:
+    local:
+      type: duckdb
+      path: ../../db.duckdb
+      schema: analytics
+  target: local

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: "Cleaned users data from MongoDB"
+    columns:
+      - name: user_id
+        description: "Primary key from MongoDB ObjectId"
+        tests:
+          - unique
+          - not_null
+      - name: active
+        description: "User's active status, defaults to FALSE"
+      - name: created_date
+        description: "Date the user was created, converted from MongoDB date"
+      - name: last_login
+        description: "Last login date, converted from MongoDB date"
+      - name: role
+        description: "Normalized user role"
+      - name: sign_up_source
+        description: "Source from where user signed up"
+      - name: state
+        description: "State information, normalized"
