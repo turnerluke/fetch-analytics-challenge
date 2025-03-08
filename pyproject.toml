@@ -1,0 +1,16 @@
+[project]
+name = "fetch-analytics-challenge"
+version = "0.1.0"
+description = "Turner Luke's end-to-end analytics engineering challenge for Fetch Rewards."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core>=1.9.2",
+    "dbt-duckdb>=1.9.2",
+    "duckdb-engine>=0.15.0",
+    "inflection>=0.5.1",
+    "ipykernel>=6.29.5",
+    "pandas>=2.2.3",
+    "polars>=1.23.0",
+    "pyarrow>=19.0.1",
+]
