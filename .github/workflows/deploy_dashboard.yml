@@ -33,7 +33,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./build/fetch-analytics-challenge"
+          path: "viz/build/fetch-analytics-challenge"
 
   deploy:
     needs: build
