@@ -31,7 +31,7 @@ jobs:
         working-directory: viz
 
       - name: List build dir
-        run: ls -la build
+        run: ls -la ./build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
